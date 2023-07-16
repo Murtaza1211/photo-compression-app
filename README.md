@@ -46,14 +46,3 @@ To run the Photo Compression App locally, follow these steps:
 
 Contributions are welcome! If you find any issues or would like to add new features, please submit an issue or a pull request.
 
-## License
-
-The Photo Compression App is released under the [MIT License](LICENSE).
-
-## Acknowledgements
-
-- Node.js: [https://nodejs.org](https://nodejs.org)
-- Express: [https://expressjs.com](https://expressjs.com)
-- Sharp: [https://sharp.pixelplumbing.com](https://sharp.pixelplumbing.com)
-
-
