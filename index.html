@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Photo Compression App</title>
+  <style>
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .thumbnail {
+      width: 150px;
+      height: 150px;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .thumbnail-description {
+      margin-top: 5px;
+      font-size: 14px;
+      text-align: center;
+    }
+    .enlarged-image {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 90%;
+      max-height: 90%;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Photo Compression App</h1>
+    <form id="uploadForm" enctype="multipart/form-data">
+      <input type="file" id="photoInput" accept="image/*" required>
+      <button type="submit">Upload</button>
+    </form>
+    <div id="output"></div>
+    <div id="thumbnailContainer"></div>
+    <div id="originalThumbnailContainer"></div>
+    <div id="descriptionContainer"></div>
+    <img id="original-image" class="enlarged-image" src="" alt="Original Image">
+    <img id="compressed-image" class="enlarged-image" src="" alt="Compressed Image">
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
